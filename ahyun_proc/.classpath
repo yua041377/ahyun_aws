@@ -33,5 +33,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/yua04/Documents/NetSarang Computer/7/eGovFrameDev-3.7.0-64bit/workspace/tidsEsbAgent/coreLib/oracle/ojdbc14/10.2.0.4.0/ojdbc14-10.2.0.4.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
