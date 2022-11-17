@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-version: 0.2
-
-phases:
-  install:
-    runtime-versions:
-      java: corretto11
-  pre_build:
-    commands:
-      - echo Nothing to do in the pre_build phase...
-  build:
-    commands:
-      - echo Build started on `date`
-      - mvn install
-  post_build:
-    commands:
-      - echo Build completed on `date`
-artifacts:
-  files:
-    - target/ahyun-1.0.0-BUILD-SNAPSHOT.war
-=======
 # 버전은 현재, 0.2가 권장사항입니다.
 version: 0.2
 
@@ -47,4 +26,3 @@ artifacts:
   # '**/*'는 모든 파일을 재귀적으로 나타냅니다.
   files:
     - target/**/*
->>>>>>> branch 'main' of https://github.com/yua041377/ahyun_aws.git
