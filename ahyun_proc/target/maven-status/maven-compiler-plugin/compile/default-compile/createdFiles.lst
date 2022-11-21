@@ -1,0 +1,7 @@
+kr\or\ahyun\controller\BoardController.class
+kr\or\ahyun\service\BoardServiceimpl.class
+kr\or\ahyun\dao\IBaordDao.class
+kr\or\ahyun\HomeController.class
+kr\or\ahyun\service\IBoardService.class
+kr\or\ahyun\controller\AttachFileMapper.class
+kr\or\ahyun\dao\BoardDaoimpl.class
