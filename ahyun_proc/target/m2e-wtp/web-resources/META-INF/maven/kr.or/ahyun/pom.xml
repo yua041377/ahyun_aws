@@ -211,6 +211,7 @@
                     <source>1.6</source>
                     <target>1.6</target>
                     <compilerArgument>-Xlint:all</compilerArgument>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
                 </configuration>

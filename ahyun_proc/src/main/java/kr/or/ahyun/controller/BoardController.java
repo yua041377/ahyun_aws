@@ -1,14 +1,15 @@
 package kr.or.ahyun.controller;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.crypto.KeyGenerator;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.json.simple.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +25,22 @@ public class BoardController {
 	
 	@Inject
 	public IBoardService service;
+	
+	@RequestMapping("jsonDownload")
+	@ResponseBody
+	public String jsonDownload() throws Exception{
+		
+		JSONObject resultObj = new JSONObject();
+		
+		String randomStr = "key"+Math.random();
+		
+		resultObj.put("msg","success");
+		resultObj.put("key", randomStr);
+		
+		String result = resultObj.toString();
+		
+		return result;
+	}
 	
 	@RequestMapping("/boardMain")
 	public ModelAndView boardMain(ModelAndView mv) throws Exception{
